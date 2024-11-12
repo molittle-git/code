@@ -1,3 +1,5 @@
+package 算法;
+
 import java.io.*;
 import java.util.*;
 public class 二_1单链表{
