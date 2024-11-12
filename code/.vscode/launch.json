@@ -1,0 +1,208 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Java.Test.Main",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Knapsack",
+            "request": "launch",
+            "mainClass": "算法.Knapsack",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "四_01背包",
+            "request": "launch",
+            "mainClass": "算法.四_01背包",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Maint",
+            "request": "launch",
+            "mainClass": "Maint",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "dianlu",
+            "request": "launch",
+            "mainClass": "dianlu",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "阿一_7双指针",
+            "request": "launch",
+            "mainClass": "算法.阿一_7双指针",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Main999",
+            "request": "launch",
+            "mainClass": "Main999",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeTest",
+            "request": "launch",
+            "mainClass": "EmployeeTest",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "食堂",
+            "request": "launch",
+            "mainClass": "Java.lanqiao.食堂",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "three",
+            "request": "launch",
+            "mainClass": "Java.lanqiao.three",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "two",
+            "request": "launch",
+            "mainClass": "Java.lanqiao.two",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "one",
+            "request": "launch",
+            "mainClass": "Java.lanqiao.one",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "逆序对",
+            "request": "launch",
+            "mainClass": "逆序对",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Permutations",
+            "request": "launch",
+            "mainClass": "Permutations",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Test000",
+            "request": "launch",
+            "mainClass": "Test000",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Mainn",
+            "request": "launch",
+            "mainClass": "Mainn",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Main4",
+            "request": "launch",
+            "mainClass": "Main4",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "结构体",
+            "request": "launch",
+            "mainClass": "结构体",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Factorial",
+            "request": "launch",
+            "mainClass": "Factorial",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Test666",
+            "request": "launch",
+            "mainClass": "Test666",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "阿一_1快排",
+            "request": "launch",
+            "mainClass": "阿一_1快排",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Main00",
+            "request": "launch",
+            "mainClass": "Main00",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
+            "name": "Welcome",
+            "request": "launch",
+            "mainClass": "Welcome",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "name": "(gdb) 启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
