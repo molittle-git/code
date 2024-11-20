@@ -1,5 +1,3 @@
-package 算法;
-
 import java.util.*;
 import java.io.*;
 public class 阿一_8桶排序{

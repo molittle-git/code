@@ -1,5 +1,3 @@
-package 算法;
-
 import java.io.*;
 public class 阿一_5前缀和二维{
     //子矩阵的和

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GreedyBestLoadingProblem",
+            "request": "launch",
+            "mainClass": "GreedyBestLoadingProblem",
+            "projectName": "code_72e5cfe6"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Java.Test.Main",

@@ -1,5 +1,4 @@
 package Java.Test;
-
 import java.io.*;
 import java.util.*;
 public class 结构体{
