@@ -19,4 +19,5 @@
 # else:
 #     print(finds(a,b),b.find(a))
 a='abc'+'cde'
-print(a)
+pi=3.14
+print(pi)

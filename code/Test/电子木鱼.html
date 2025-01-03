@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子木鱼 - 敲击功德</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            color: white;
+        }
+        #wooden-fish {
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        #merit {
+            font-size: 24px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wooden-fish" onclick="knockFish()"></div>
+    <div id="merit">功德：<span id="merit-value">0</span></div>
+    <button id="reset-button" onclick="resetMerit()">清除功德</button>
+    <button id="switch-fish-button" onclick="switchFishImage()">摸摸小猫</button>
+
+    <script>
+        let merit = parseInt(localStorage.getItem('merit')) || 0;
+        let fishImages = [
+            'https://muyv.saop.cc/img/muyv.webp', // 替换为第一张木鱼图片的URL
+            'https://ts1.cn.mm.bing.net/th/id/R-C.1b501b5628a93c6fc24662753c703d8e?rik=NQ8pts%2f7BigquA&riu=http%3a%2f%2fwww.quazero.com%2fuploads%2fallimg%2f140228%2f1-14022QA426.jpg&ehk=3B6asrmFd7yXJsxJWL5pVUN9izU8g1W%2bWOobeRg4%2ffw%3d&risl=&pid=ImgRaw&r=0',      // 替换为第二张木鱼图片的URL
+            'https://ts1.cn.mm.bing.net/th/id/R-C.7f64dd89bd62165c4ebc3ef932881124?rik=XQjfIEAW69oAzA&riu=http%3a%2f%2fpic.bizhi360.com%2fbpic%2f91%2f2891.jpg&ehk=PfpwD%2fOO3a29H%2bU8XvyCHVDYNNUezFQ1%2b%2f7DMvsgitw%3d&risl=&pid=ImgRaw&r=0'       // 替换为第三张木鱼图片的URL
+            // 可以继续添加更多的木鱼图片URL
+        ];
+        let currentImageIndex = 0;
+
+        function knockFish() {
+            merit++;
+            localStorage.setItem('merit', merit.toString());
+            document.getElementById('merit-value').textContent = merit;
+            let size = Math.min(merit / 10, 10) * 100;
+            document.getElementById('wooden-fish').style.width = size + 'px';
+            document.getElementById('wooden-fish').style.height = size + 'px';
+        }
+
+        function resetMerit() {
+            merit = 0;
+            localStorage.removeItem('merit');
+            document.getElementById('merit-value').textContent = merit;
+            document.getElementById('wooden-fish').style.width = '100px';
+            document.getElementById('wooden-fish').style.height = '100px';
+            currentImageIndex = 0; // 重置图片索引
+            document.getElementById('wooden-fish').style.backgroundImage = 'url(' + fishImages[currentImageIndex] + ')';
+        }
+
+        function switchFishImage() {
+            currentImageIndex = (currentImageIndex + 1) % fishImages.length;
+            document.getElementById('wooden-fish').style.backgroundImage = 'url(' + fishImages[currentImageIndex] + ')';
+        }
+    </script>
+</body>
+</html>

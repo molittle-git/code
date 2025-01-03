@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "code_fda0215f"
+        },
+        {
+            "type": "java",
             "name": "GreedyBestLoadingProblem",
             "request": "launch",
             "mainClass": "GreedyBestLoadingProblem",

@@ -51,29 +51,34 @@
 //         return;
 // }
 // }
-import java.util.Scanner;
-
-import java.util.ArrayList;
-
-import java.util.Arrays;
-
-import java.util.Collections;
-
-import java.util.Comparator;
-
+import java.util.*;
 public class Main{
-    static int ret=0;
-public static void main(String[] args){
-    Scanner sc=new Scanner(System.in);
-    
-    int N=sc.nextInt();
-    int T=sc.nextInt();
-    me(N,T);
-    System.out.println(ret);
-
+    public class mm{
+        int x;
+        int y;
+        public mm(int x,int y){
+            this.x=x;
+            this.y=y;
+        }
     }
-    public static void me(int a,int b){
-    ret+=2;
+    public static int dfs(int num,int rest){
+        if(num>n)return 0;
+        int maxn=0;
+        if(xi[num]<=a+b&&rest>=yi[num])
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        static int n=sc.nextInt();
+        int s=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int []xi=new int[n+1];
+        int []yi=new int[n+1];
+        
+        for(int i=0;i<n;i++){
+            int x1=sc.nextInt();
+            int y1=sc.nextInt();
+            
+        }
+    }
 }
-}
-
